@@ -568,6 +568,34 @@ p("Thirteen features were engineered from the raw columns. Each one exists for a
 table_from_dataframe(feature_notes,
                      column_titles=["Feature", "Type", "Why it is used"])
 
+h3("Scaling, encoding and binning")
+
+p("Three standard preparation techniques are applied, each for a specific reason "
+  "rather than out of habit.")
+
+techniques = pd.DataFrame([
+    ["Scaling", "StandardScaler on all %d features"
+     % len(features["feature_columns"]),
+     "Logistic Regression, SVM and the neural network all measure distances between "
+     "points. Without scaling, city population (in the millions) would completely "
+     "drown out is_night (0 or 1). Tree models do not care, so both a scaled and an "
+     "unscaled copy of the data are kept and each model is given the one it needs."],
+    ["Encoding", "One-hot for category (14 columns); frequency encoding for merchant",
+     "Models cannot read text. Category has only 14 values, so one-hot keeps each one "
+     "separately interpretable for SHAP. Merchant has 693 values, which would add 693 "
+     "columns, so it is replaced by how often each shop appears instead."],
+    ["Binning", "age into 4 bands; city_pop into 4 size classes",
+     "These bands are NOT model inputs. They exist so the fairness audit in Step 5 can "
+     "compare groups. Auditing across continuous age would give one 'group' per "
+     "customer and say nothing."],
+], columns=["Technique", "What was done", "Why"])
+table_from_dataframe(techniques)
+
+callout("The scaler is fitted on the training rows only and then applied to the test "
+        "rows. Fitting it on the whole dataset would let the test period's mean and "
+        "spread leak into training - a subtle and very common mistake that quietly "
+        "inflates results.")
+
 h3("Guarding against leakage")
 
 p("Two features - the card's average spend and how common each shop is - are learned from "
