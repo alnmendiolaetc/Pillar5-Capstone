@@ -1,0 +1,4 @@
+attribute,equal_opportunity_gap,disparate_impact_ratio
+Gender,5.29,0.836
+Age,4.47,0.726
+City size,5.08,0.605

@@ -1,0 +1,23 @@
+variable,description,data_type,unit_or_format,allowed_values,unique_values,missing_count,example
+trans_date_trans_time,Date and time the transaction happened,object,text date (M/D/YY H:MM),476595 different text values,476595,0,1/1/19 0:00
+cc_num,Credit card number of the customer (identifier only),float64,number,from 60416207185.0 to 4.99235e+18,943,0,2703190000000000.0
+merchant,Name of the shop where the card was used,object,text,693 different text values,693,0,"fraud_Rippin, Kub and Mann"
+category,"Type of purchase, for example grocery_pos or shopping_net",object,text (14 categories),"entertainment, food_dining, gas_transport, grocery_net, grocery_pos, health_fitness, home, kids_pets, misc_net, misc_pos, personal_care, shopping_net, shopping_pos, travel",14,0,misc_net
+amt,Amount of the transaction,float64,US dollars,from 1.0 to 28948.9,48602,0,4.97
+first,Customer first name - PERSONAL DATA,object,text,348 different text values,348,0,Jennifer
+last,Customer last name - PERSONAL DATA,object,text,479 different text values,479,0,Banks
+gender,Gender of the cardholder - SENSITIVE ATTRIBUTE,object,M or F,"F, M",2,0,F
+street,Customer home street address - PERSONAL DATA,object,text,965 different text values,965,0,561 Perry Cove
+city,Customer home city,object,text,879 different text values,879,0,Moravian Falls
+state,Customer home state,object,text (2-letter code),51 different text values,51,0,NC
+zip,Customer home postcode,int64,number,from 1257 to 99783,952,0,28654
+lat,Latitude of the customer home,float64,degrees,from 20.0271 to 66.6933,950,0,36.0788
+long,Longitude of the customer home,float64,degrees,from -165.6723 to -67.9503,951,0,-81.1781
+city_pop,Population of the customer city - used as a wealth/urban proxy,int64,number of people,from 23 to 2906700,865,0,3495
+job,Job title of the cardholder - SENSITIVE ATTRIBUTE (social status),object,text,493 different text values,493,0,"Psychologist, counselling"
+dob,Date of birth of the cardholder - used to compute age,object,"text date (M/D/YY, 2-digit year)",950 different text values,950,0,3/9/88
+trans_num,Unique reference code of the transaction,object,text (hash),1048575 different text values,1048575,0,0b242abb623afc578575680df30655b9
+unix_time,Same transaction time but counted in seconds since 1970,int64,seconds,from 1325376018 to 1362931730,1030650,0,1325376018
+merch_lat,Latitude of the shop,float64,degrees,from 19.027785 to 67.510267,1016437,0,36.011293
+merch_long,Longitude of the shop,float64,degrees,from -166.671242 to -66.950902,1034825,0,-82.048315
+is_fraud,"TARGET: 1 means the transaction was fraud, 0 means it was genuine",int64,0 or 1,"0, 1",2,0,0

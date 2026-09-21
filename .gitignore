@@ -1,0 +1,34 @@
+# --- Virtual environment ---
+# Never commit this. Anyone can rebuild it from requirements.txt.
+venv/
+.venv/
+
+# --- Data files ---
+# The raw dataset is 258 MB and the processed training file is 233 MB.
+# GitHub rejects any single file over 100 MB, and committing data to git is
+# bad practice anyway. Run src/01_download_data.py to fetch the data instead;
+# everything downstream is reproducible from there.
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# --- Archives ---
+# A zip of the whole project (for uploading to the submission portal) must never
+# be committed. It contains venv/ and data/ and runs to hundreds of megabytes,
+# far past GitHub's 100 MB per-file limit.
+*.zip
+*.7z
+*.rar
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

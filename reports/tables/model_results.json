@@ -1,0 +1,85 @@
+{
+  "best_model": "Random Forest",
+  "best_threshold": 0.5,
+  "random_baseline_pr_auc": 0.00546,
+  "n_train": 838860,
+  "n_test": 209715,
+  "n_features": 27,
+  "imbalance_ratio": 171.6,
+  "cost_per_review": 5.0,
+  "cost_per_upset_customer": 45.0,
+  "highest_pr_auc_model": "Neural Network (MLP)",
+  "highest_pr_auc": 0.8613,
+  "chosen_for_explainability": true,
+  "cost_sensitivity": [
+    {
+      "assumed_cost_per_false_alarm": 0.0,
+      "best_threshold": 0.25,
+      "alerts": 3278,
+      "fraud_caught": 1077,
+      "recall": 0.9406,
+      "net_benefit": 601815.76
+    },
+    {
+      "assumed_cost_per_false_alarm": 15.0,
+      "best_threshold": 0.4,
+      "alerts": 2244,
+      "fraud_caught": 1034,
+      "recall": 0.9031,
+      "net_benefit": 579411.21
+    },
+    {
+      "assumed_cost_per_false_alarm": 45.0,
+      "best_threshold": 0.5,
+      "alerts": 1798,
+      "fraud_caught": 1009,
+      "recall": 0.8812,
+      "net_benefit": 554949.62
+    },
+    {
+      "assumed_cost_per_false_alarm": 100.0,
+      "best_threshold": 0.65,
+      "alerts": 1372,
+      "fraud_caught": 949,
+      "recall": 0.8288,
+      "net_benefit": 522988.82
+    },
+    {
+      "assumed_cost_per_false_alarm": 250.0,
+      "best_threshold": 0.75,
+      "alerts": 1132,
+      "fraud_caught": 891,
+      "recall": 0.7782,
+      "net_benefit": 480469.89
+    }
+  ],
+  "capacity_option": {
+    "max_alerts": 1200,
+    "threshold": 0.75,
+    "alerts": 1132,
+    "fraud_caught": 891,
+    "recall": 0.7782,
+    "precision": 0.7871,
+    "net_benefit": 529874.89
+  },
+  "best_recall": 0.8812,
+  "best_precision": 0.5612,
+  "best_pr_auc": 0.8605,
+  "best_roc_auc": 0.9954,
+  "best_f1": 0.6857,
+  "best_accuracy": 0.9956,
+  "at_best_threshold": {
+    "threshold": 0.5,
+    "alerts": 1798,
+    "fraud_caught": 1009,
+    "fraud_missed": 136,
+    "false_alarms": 789,
+    "recall": 0.8812,
+    "precision": 0.5612,
+    "money_saved": 599444.62,
+    "review_cost": 8990.0,
+    "customer_cost": 35505.0,
+    "net_benefit": 554949.62
+  },
+  "total_fraud_value_in_test": 628669.3
+}

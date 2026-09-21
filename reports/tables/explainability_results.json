@@ -1,0 +1,79 @@
+{
+  "top_feature_builtin": "amt_log",
+  "top_feature_permutation": "amt_log",
+  "top_feature_shap": "amt_log",
+  "top_5_shap_features": [
+    "amt_log",
+    "amt",
+    "is_night",
+    "amt_vs_card_avg",
+    "hour"
+  ],
+  "lime_example": {
+    "actual_amount": 891.62,
+    "model_score": 0.9894,
+    "hour": 22,
+    "reasons": [
+      {
+        "reason": "cat_gas_transport <= 0.00",
+        "weight": -0.0976
+      },
+      {
+        "reason": "amt > 83.07",
+        "weight": 0.0514
+      },
+      {
+        "reason": "0.00 < is_night <= 1.00",
+        "weight": 0.0307
+      },
+      {
+        "reason": "amt_vs_card_avg > 1.19",
+        "weight": -0.0272
+      },
+      {
+        "reason": "cat_shopping_net <= 0.00",
+        "weight": 0.0204
+      },
+      {
+        "reason": "cat_shopping_pos <= 0.00",
+        "weight": 0.0179
+      },
+      {
+        "reason": "amt_log > 4.43",
+        "weight": 0.0177
+      },
+      {
+        "reason": "hour > 19.00",
+        "weight": 0.0151
+      },
+      {
+        "reason": "cat_grocery_pos <= 0.00",
+        "weight": -0.0131
+      },
+      {
+        "reason": "cat_misc_net > 0.00",
+        "weight": -0.0103
+      }
+    ]
+  },
+  "feature_selection": [
+    {
+      "features_used": 5,
+      "pr_auc": 0.5227
+    },
+    {
+      "features_used": 10,
+      "pr_auc": 0.7538
+    },
+    {
+      "features_used": 15,
+      "pr_auc": 0.7749
+    },
+    {
+      "features_used": 27,
+      "pr_auc": 0.8262
+    }
+  ],
+  "pca_components_for_95_percent": 21,
+  "total_features": 27
+}

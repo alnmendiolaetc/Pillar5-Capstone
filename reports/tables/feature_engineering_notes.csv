@@ -1,0 +1,15 @@
+feature,type,why_we_use_it
+amt,Original,The payment amount. Fraudsters often test with small amounts then spend big.
+amt_log,Engineered,Log of the amount. Squashes a very skewed range so models cope better.
+amt_vs_card_avg,Engineered,Amount divided by this card's usual spend. Catches out-of-character payments.
+card_avg_amt,Engineered,"The card's normal spending level, learned from training data only."
+merchant_freq,Engineered,How often the shop appears. Unknown shops carry more risk.
+age,Engineered,"Age at the time of payment, worked out from date of birth."
+hour,Engineered,Hour of the day. Fraud peaks at night.
+day_of_week,Engineered,"Day of the week, to capture weekly habits."
+month,Engineered,"Month, to capture seasonal effects."
+is_night,Engineered,"1 if between 10pm and 4am, when the real owner is usually asleep."
+distance_km,Engineered,"Distance from home to the shop, using the haversine formula."
+city_pop,Original,"Size of the customer's city, a rough proxy for urban or rural."
+city_pop_log,Engineered,"Log of city size, because the raw values are very skewed."
+cat_*,Engineered,One yes/no column per purchase category (one-hot encoding).

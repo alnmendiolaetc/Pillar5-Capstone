@@ -1,0 +1,21 @@
+{
+  "source_file": "credit_card_fraud_transactions.csv",
+  "n_rows": 1048575,
+  "n_columns": 22,
+  "n_fraud": 6006,
+  "n_genuine": 1042569,
+  "fraud_rate_percent": 0.5728,
+  "total_missing_values": 0,
+  "duplicate_rows": 0,
+  "duplicate_transaction_ids": 0,
+  "first_transaction": "2019-01-01 00:00:00",
+  "last_transaction": "2020-03-10 16:08:00",
+  "looks_truncated_by_excel": true,
+  "dob_wrong_century_rows": 358189,
+  "dob_wrong_century_percent": 34.16,
+  "amt_outlier_count": 54542,
+  "amt_outlier_upper_limit": 193.16,
+  "total_fraud_amount": 3186624.39,
+  "average_fraud_amount": 530.57,
+  "average_genuine_amount": 67.63
+}

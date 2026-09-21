@@ -1,0 +1,57 @@
+{
+  "feature_columns": [
+    "amt",
+    "amt_log",
+    "amt_vs_card_avg",
+    "card_avg_amt",
+    "merchant_freq",
+    "age",
+    "hour",
+    "day_of_week",
+    "month",
+    "is_night",
+    "distance_km",
+    "city_pop",
+    "city_pop_log",
+    "cat_entertainment",
+    "cat_food_dining",
+    "cat_gas_transport",
+    "cat_grocery_net",
+    "cat_grocery_pos",
+    "cat_health_fitness",
+    "cat_home",
+    "cat_kids_pets",
+    "cat_misc_net",
+    "cat_misc_pos",
+    "cat_personal_care",
+    "cat_shopping_net",
+    "cat_shopping_pos",
+    "cat_travel"
+  ],
+  "extra_columns": [
+    "is_fraud",
+    "gender",
+    "age_band",
+    "city_size",
+    "job",
+    "category",
+    "trans_date_trans_time"
+  ],
+  "split_date": "2019-12-13 08:27:00",
+  "n_train": 838860,
+  "n_test": 209715,
+  "train_fraud_rate_percent": 0.5795,
+  "test_fraud_rate_percent": 0.546,
+  "dropped_pii": [
+    "first",
+    "last",
+    "street",
+    "trans_num",
+    "cc_num",
+    "zip"
+  ],
+  "dropped_protected": [
+    "gender",
+    "job"
+  ]
+}

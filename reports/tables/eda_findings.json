@@ -1,0 +1,16 @@
+{
+  "fraud_rate_percent": 0.5795,
+  "average_fraud_amount": 526.22,
+  "average_genuine_amount": 67.64,
+  "worst_hour": 22,
+  "worst_hour_rate_percent": 2.865,
+  "night_fraud_rate_percent": 1.842,
+  "day_fraud_rate_percent": 0.118,
+  "worst_category": "shopping_net",
+  "worst_category_rate_percent": 1.75,
+  "safest_category": "home",
+  "average_fraud_age": 48.3,
+  "average_genuine_age": 45.8,
+  "strongest_correlation_feature": "amt",
+  "strongest_correlation_value": 0.2126
+}

@@ -1,0 +1,8 @@
+model,accuracy,precision,recall,f1,roc_auc,pr_auc,training_seconds,note
+Neural Network (MLP),0.998,0.8811,0.738,0.8032,0.9944,0.8613,13.4,trained on 200000 row sample
+Random Forest,0.9956,0.5612,0.8812,0.6857,0.9954,0.8605,74.1,trained on all 838860 rows
+XGBoost,0.9952,0.5402,0.8384,0.6571,0.9947,0.8307,17.3,trained on all 838860 rows
+Decision Tree,0.9713,0.1567,0.9712,0.2698,0.9835,0.679,11.6,trained on all 838860 rows
+Support Vector Machine,0.9866,0.2623,0.8044,0.3956,0.9618,0.5087,3.0,trained on 30000 row sample
+Logistic Regression,0.9053,0.0497,0.9013,0.0941,0.9659,0.2377,2.5,trained on all 838860 rows
+Isolation Forest (unsupervised),0.9919,0.3195,0.4314,0.3671,0.9297,0.2212,4.8,no labels used

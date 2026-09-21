@@ -1,0 +1,47 @@
+{
+  "k_values": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "silhouette_scores": [
+    0.1569,
+    0.1579,
+    0.1622,
+    0.1673,
+    0.1685,
+    0.1689,
+    0.1746,
+    0.1729,
+    0.1789
+  ],
+  "best_k": 10,
+  "best_silhouette": 0.1789,
+  "riskiest_cluster_lift": 25.89,
+  "riskiest_cluster_fraud_rate": 17.473,
+  "overall_sample_fraud_rate": 0.675,
+  "pca_variance_kept_percent": 47.43,
+  "dbscan_noise_fraud_rate": 8.6555,
+  "dbscan_cluster_fraud_rate": 0.1701,
+  "dbscan_noise_lift": 50.88,
+  "dbscan_clusters": 1,
+  "dbscan_noise_count": 1190,
+  "dbscan_noise_percent": 5.95,
+  "hierarchical_silhouette": 0.1252,
+  "hierarchical_sample_size": 800,
+  "sample_size": 20000,
+  "features_used": [
+    "amt_log",
+    "hour",
+    "distance_km",
+    "age",
+    "amt_vs_card_avg",
+    "city_pop_log"
+  ]
+}

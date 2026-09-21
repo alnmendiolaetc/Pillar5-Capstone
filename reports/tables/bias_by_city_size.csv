@@ -1,0 +1,5 @@
+group,people,actual_fraud,base_rate_percent,selection_rate_percent,tpr_percent,fpr_percent,precision_percent,false_alarms,missed_fraud
+City,28742,188,0.654,1.11,90.43,0.522,53.29,149,18
+Large city,10638,54,0.508,0.761,90.74,0.302,60.49,32,5
+Rural,105655,551,0.522,0.671,85.66,0.225,66.57,237,79
+Small town,64680,352,0.544,1.065,90.34,0.577,46.15,371,34
