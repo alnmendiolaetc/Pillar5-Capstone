@@ -64,6 +64,7 @@ Total runtime is roughly 20–30 minutes on a 4-core CPU.
 │   └── processed/      cleaned train/test files
 ├── src/                the eleven scripts above
 ├── models/             saved trained models (.joblib)
+├── notebooks/          executed walkthrough of the main findings
 ├── reports/
 │   ├── figures/        every chart (33 PNGs)
 │   └── tables/         every metrics table and results file

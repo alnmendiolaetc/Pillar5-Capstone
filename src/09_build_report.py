@@ -1347,6 +1347,8 @@ h2("7.1 Repository structure")
 
 repo_layout = pd.DataFrame([
     ["src/", "The eleven numbered scripts, run in order from 01 to 11"],
+    ["notebooks/", "A walkthrough notebook that loads the saved results and shows the "
+                   "main findings, with outputs already executed"],
     ["data/", "Folder structure for the raw and processed data (contents not committed)"],
     ["models/", "The saved trained models: best_model.joblib, scaler.joblib, isolation_forest.joblib"],
     ["reports/figures/", "All 33 charts used in this report and in the slide decks"],
@@ -1549,6 +1551,7 @@ layout = [
     "models/           - saved trained models",
     "reports/figures/  - every chart used in this report",
     "reports/tables/   - every table and results file",
+    "notebooks/        - an executed walkthrough of the main findings",
 ]
 for line in layout:
     code_paragraph = doc.add_paragraph(line)
